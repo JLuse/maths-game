@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>10 Sec Maths Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:ital,wght@1,300&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>The Maths Game</h1>
+        </div>
+      </div>
+
+        <div class="row">
+          <h2>Score: <span id="score"></span></h2>
+          <h3>second left: <span id="time-left"></span></h3>
+        </div>
+        
+        <div class="row">
+          <h2 id="equation"></h2>
+          <input id="user-input" type="number" oninput="validateNumericInput(this)"/>
+        </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <input type="radio" name="arithmetic-select" id="addition" checked />
+          <label for="addition">Addition</label>
+          <input type="radio" name="arithmetic-select" id="subtraction"/>
+          <label for="subtraction">Subtraction</label>
+          <input type="radio" name="arithmetic-select" id="multiplication"/>
+          <label for="multiplication">Multiplication</label>
+          <input type="radio" name="arithmetic-select" id="division"/>
+          <label for="division">Division</label>
+        </div>
+      </div>
+
+      <div id="giphy" class="row">
+      </div>
+      
+    </div> <!-- end container -->
+  </body>
+</html>

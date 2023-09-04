@@ -1,0 +1,28 @@
+body {
+  background-color: #fffff0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Teko', sans-serif;
+}
+
+#equation {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 300px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#user-input {
+  margin: 20px 0px 20px 0px;
+}
+
+#time-left {
+  color: #dc143c;
+  font-size: 30px;
+}
+
+label {
+  font-size: 20px;
+}
