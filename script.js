@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     var num1 = Math.floor(Math.random() * 9) + 2;
     var num2 = Math.floor(Math.random() * (num1 - 1)) + 1;
+    var product = num1 * num2;
     
     if (addButton.checked) {
       question.answer = num1 + num2;
@@ -38,8 +39,8 @@ $(document).ready(function(){
       giphy.appendChild(imgTag)
 
     } else if (divisionButton.checked) {
-      question.answer = Math.floor(num1 / num2);
-      question.equation = String(num1) + " / " + String(num2);
+      question.answer = Math.floor(product / num2);
+      question.equation = String(product) + " / " + String(num2);
       imgTag.src = 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGw2c3JoNzAzejl2ZDdkMHVuc3B3YWtteG92NHNnMng3d3oxZHliYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ne3xrYlWtQFtC/giphy.gif'
       imgTag.alt = 'Math Giphy'
       giphy.appendChild(imgTag)
